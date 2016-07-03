@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2444C11D29C1C6002111AB /* RBMenuCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2444C01D29C1C6002111AB /* RBMenuCellItem.swift */; };
+		3D2444C31D29C6D8002111AB /* RBMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2444C21D29C6D8002111AB /* RBMenuCell.xib */; };
+		3D30B64A1D22687C00844486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30B6491D22687C00844486 /* AppDelegate.swift */; };
+		3D30B64F1D22687C00844486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D30B64D1D22687C00844486 /* Main.storyboard */; };
+		3D30B6511D22687C00844486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D30B6501D22687C00844486 /* Assets.xcassets */; };
+		3D30B6541D22687C00844486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D30B6521D22687C00844486 /* LaunchScreen.storyboard */; };
+		3D3ACA531D26AEC600E63AA1 /* RBMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ACA521D26AEC600E63AA1 /* RBMenuCell.swift */; };
+		3D6213F31D229AC200357F50 /* RBMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6213F21D229AC200357F50 /* RBMenuViewController.swift */; };
+		3D6213F81D22A19F00357F50 /* RBKeyboardStorageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6213F71D22A19F00357F50 /* RBKeyboardStorageConstants.swift */; };
+		3D6213FA1D22A53300357F50 /* RBKeyboardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6213F91D22A53300357F50 /* RBKeyboardListViewController.swift */; };
+		3D6213FC1D22A61500357F50 /* RBKeyboardSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6213FB1D22A61500357F50 /* RBKeyboardSampleViewController.swift */; };
+		3D6213FF1D22B88000357F50 /* RBKeyboardPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6213FE1D22B88000357F50 /* RBKeyboardPreviewCell.swift */; };
+		3D9D73081D297FA900937931 /* RBRestorePurchasesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D73071D297FA900937931 /* RBRestorePurchasesCell.swift */; };
+		3D9D730A1D297FCD00937931 /* RBMoreKeyboardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D73091D297FCD00937931 /* RBMoreKeyboardsCell.swift */; };
+		3D9D730C1D297FEA00937931 /* RBRestorePurchasesCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D730B1D297FEA00937931 /* RBRestorePurchasesCellItem.swift */; };
+		3D9D730E1D297FFF00937931 /* RBMoreKeyboardsCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D730D1D297FFF00937931 /* RBMoreKeyboardsCellItem.swift */; };
+		3D9D73101D29802D00937931 /* RBMoreKeyboardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D730F1D29802D00937931 /* RBMoreKeyboardsCell.xib */; };
+		3D9D73121D29803B00937931 /* RBRestorePurchasesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D73111D29803B00937931 /* RBRestorePurchasesCell.xib */; };
+		3D9D73141D29804600937931 /* RBKeyboardPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D73131D29804600937931 /* RBKeyboardPreviewCell.xib */; };
+		3D9D73171D298BEF00937931 /* RBBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D73161D298BEF00937931 /* RBBaseTableViewCell.swift */; };
+		3D9D73191D298C1400937931 /* RBBaseCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D73181D298C1400937931 /* RBBaseCellItem.swift */; };
+		3DD3BA601D23CBAC000E2C3C /* RBKeyboardPreviewCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3BA5F1D23CBAC000E2C3C /* RBKeyboardPreviewCellItem.swift */; };
+		3DD3BA661D269C83000E2C3C /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3BA651D269C83000E2C3C /* UIColor+Utils.swift */; };
+		3DD3BA691D26A676000E2C3C /* RBBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3BA681D26A676000E2C3C /* RBBaseListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D2444C01D29C1C6002111AB /* RBMenuCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBMenuCellItem.swift; sourceTree = "<group>"; };
+		3D2444C21D29C6D8002111AB /* RBMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBMenuCell.xib; sourceTree = "<group>"; };
+		3D30B6461D22687C00844486 /* Rainboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D30B6491D22687C00844486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D30B64E1D22687C00844486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D30B6501D22687C00844486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D30B6531D22687C00844486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D30B6551D22687C00844486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3ACA521D26AEC600E63AA1 /* RBMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBMenuCell.swift; sourceTree = "<group>"; };
+		3D6213F21D229AC200357F50 /* RBMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBMenuViewController.swift; sourceTree = "<group>"; };
+		3D6213F71D22A19F00357F50 /* RBKeyboardStorageConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBKeyboardStorageConstants.swift; sourceTree = "<group>"; };
+		3D6213F91D22A53300357F50 /* RBKeyboardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBKeyboardListViewController.swift; sourceTree = "<group>"; };
+		3D6213FB1D22A61500357F50 /* RBKeyboardSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBKeyboardSampleViewController.swift; sourceTree = "<group>"; };
+		3D6213FE1D22B88000357F50 /* RBKeyboardPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBKeyboardPreviewCell.swift; sourceTree = "<group>"; };
+		3D9D73071D297FA900937931 /* RBRestorePurchasesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBRestorePurchasesCell.swift; sourceTree = "<group>"; };
+		3D9D73091D297FCD00937931 /* RBMoreKeyboardsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBMoreKeyboardsCell.swift; sourceTree = "<group>"; };
+		3D9D730B1D297FEA00937931 /* RBRestorePurchasesCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBRestorePurchasesCellItem.swift; sourceTree = "<group>"; };
+		3D9D730D1D297FFF00937931 /* RBMoreKeyboardsCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBMoreKeyboardsCellItem.swift; sourceTree = "<group>"; };
+		3D9D730F1D29802D00937931 /* RBMoreKeyboardsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBMoreKeyboardsCell.xib; sourceTree = "<group>"; };
+		3D9D73111D29803B00937931 /* RBRestorePurchasesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBRestorePurchasesCell.xib; sourceTree = "<group>"; };
+		3D9D73131D29804600937931 /* RBKeyboardPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBKeyboardPreviewCell.xib; sourceTree = "<group>"; };
+		3D9D73161D298BEF00937931 /* RBBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBaseTableViewCell.swift; sourceTree = "<group>"; };
+		3D9D73181D298C1400937931 /* RBBaseCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBaseCellItem.swift; sourceTree = "<group>"; };
+		3DD3BA5F1D23CBAC000E2C3C /* RBKeyboardPreviewCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBKeyboardPreviewCellItem.swift; sourceTree = "<group>"; };
+		3DD3BA651D269C83000E2C3C /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		3DD3BA681D26A676000E2C3C /* RBBaseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBaseListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D30B6431D22687C00844486 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D30B63D1D22687C00844486 = {
+			isa = PBXGroup;
+			children = (
+				3D30B6481D22687C00844486 /* Rainboard */,
+				3D30B6471D22687C00844486 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D30B6471D22687C00844486 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D30B6461D22687C00844486 /* Rainboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D30B6481D22687C00844486 /* Rainboard */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3BA641D269C52000E2C3C /* Extentions */,
+				3D6213F61D22A0B400357F50 /* Constants */,
+				3D6213F01D2291B800357F50 /* Controllers */,
+				3D30B6491D22687C00844486 /* AppDelegate.swift */,
+				3D30B64D1D22687C00844486 /* Main.storyboard */,
+				3D30B6501D22687C00844486 /* Assets.xcassets */,
+				3D30B6521D22687C00844486 /* LaunchScreen.storyboard */,
+				3D30B6551D22687C00844486 /* Info.plist */,
+			);
+			path = Rainboard;
+			sourceTree = "<group>";
+		};
+		3D6213F01D2291B800357F50 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3BA671D26A62D000E2C3C /* Base Controllers */,
+				3D6213F11D2291D000357F50 /* Navigation Screen */,
+				3D6213F41D229F8200357F50 /* Keyboard List  */,
+				3D6213F51D22A03800357F50 /* Keyboard Sample Screen */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D6213F11D2291D000357F50 /* Navigation Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3BA611D25AC23000E2C3C /* Cells */,
+				3D6213F21D229AC200357F50 /* RBMenuViewController.swift */,
+			);
+			name = "Navigation Screen";
+			sourceTree = "<group>";
+		};
+		3D6213F41D229F8200357F50 /* Keyboard List  */ = {
+			isa = PBXGroup;
+			children = (
+				3D6213FD1D22B83100357F50 /* Cells */,
+				3D6213F91D22A53300357F50 /* RBKeyboardListViewController.swift */,
+			);
+			name = "Keyboard List ";
+			sourceTree = "<group>";
+		};
+		3D6213F51D22A03800357F50 /* Keyboard Sample Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3D6213FB1D22A61500357F50 /* RBKeyboardSampleViewController.swift */,
+			);
+			name = "Keyboard Sample Screen";
+			sourceTree = "<group>";
+		};
+		3D6213F61D22A0B400357F50 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3D6213F71D22A19F00357F50 /* RBKeyboardStorageConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		3D6213FD1D22B83100357F50 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D73061D297F6400937931 /* More Keyboards Cell */,
+				3D9D73051D297F3F00937931 /* Restore Cell */,
+				3D9D73041D297F2A00937931 /* Preview Cell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3D9D73041D297F2A00937931 /* Preview Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D6213FE1D22B88000357F50 /* RBKeyboardPreviewCell.swift */,
+				3DD3BA5F1D23CBAC000E2C3C /* RBKeyboardPreviewCellItem.swift */,
+				3D9D73131D29804600937931 /* RBKeyboardPreviewCell.xib */,
+			);
+			name = "Preview Cell";
+			sourceTree = "<group>";
+		};
+		3D9D73051D297F3F00937931 /* Restore Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D73071D297FA900937931 /* RBRestorePurchasesCell.swift */,
+				3D9D730B1D297FEA00937931 /* RBRestorePurchasesCellItem.swift */,
+				3D9D73111D29803B00937931 /* RBRestorePurchasesCell.xib */,
+			);
+			name = "Restore Cell";
+			sourceTree = "<group>";
+		};
+		3D9D73061D297F6400937931 /* More Keyboards Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D73091D297FCD00937931 /* RBMoreKeyboardsCell.swift */,
+				3D9D730D1D297FFF00937931 /* RBMoreKeyboardsCellItem.swift */,
+				3D9D730F1D29802D00937931 /* RBMoreKeyboardsCell.xib */,
+			);
+			name = "More Keyboards Cell";
+			sourceTree = "<group>";
+		};
+		3D9D73151D298B9400937931 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D73161D298BEF00937931 /* RBBaseTableViewCell.swift */,
+				3D9D73181D298C1400937931 /* RBBaseCellItem.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3DD3BA611D25AC23000E2C3C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D3ACA521D26AEC600E63AA1 /* RBMenuCell.swift */,
+				3D2444C01D29C1C6002111AB /* RBMenuCellItem.swift */,
+				3D2444C21D29C6D8002111AB /* RBMenuCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3DD3BA641D269C52000E2C3C /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3BA651D269C83000E2C3C /* UIColor+Utils.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		3DD3BA671D26A62D000E2C3C /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D73151D298B9400937931 /* Cells */,
+				3DD3BA681D26A676000E2C3C /* RBBaseListViewController.swift */,
+			);
+			name = "Base Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D30B6451D22687C00844486 /* Rainboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D30B6581D22687C00844486 /* Build configuration list for PBXNativeTarget "Rainboard" */;
+			buildPhases = (
+				3D30B6421D22687C00844486 /* Sources */,
+				3D30B6431D22687C00844486 /* Frameworks */,
+				3D30B6441D22687C00844486 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rainboard;
+			productName = Rainboard;
+			productReference = 3D30B6461D22687C00844486 /* Rainboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D30B63E1D22687C00844486 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Rainboard;
+				TargetAttributes = {
+					3D30B6451D22687C00844486 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D30B6411D22687C00844486 /* Build configuration list for PBXProject "Rainboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D30B63D1D22687C00844486;
+			productRefGroup = 3D30B6471D22687C00844486 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D30B6451D22687C00844486 /* Rainboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D30B6441D22687C00844486 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D30B6541D22687C00844486 /* LaunchScreen.storyboard in Resources */,
+				3D2444C31D29C6D8002111AB /* RBMenuCell.xib in Resources */,
+				3D30B6511D22687C00844486 /* Assets.xcassets in Resources */,
+				3D30B64F1D22687C00844486 /* Main.storyboard in Resources */,
+				3D9D73141D29804600937931 /* RBKeyboardPreviewCell.xib in Resources */,
+				3D9D73121D29803B00937931 /* RBRestorePurchasesCell.xib in Resources */,
+				3D9D73101D29802D00937931 /* RBMoreKeyboardsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D30B6421D22687C00844486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9D730E1D297FFF00937931 /* RBMoreKeyboardsCellItem.swift in Sources */,
+				3D9D73171D298BEF00937931 /* RBBaseTableViewCell.swift in Sources */,
+				3D6213F31D229AC200357F50 /* RBMenuViewController.swift in Sources */,
+				3D2444C11D29C1C6002111AB /* RBMenuCellItem.swift in Sources */,
+				3D6213FF1D22B88000357F50 /* RBKeyboardPreviewCell.swift in Sources */,
+				3D9D730C1D297FEA00937931 /* RBRestorePurchasesCellItem.swift in Sources */,
+				3DD3BA661D269C83000E2C3C /* UIColor+Utils.swift in Sources */,
+				3D6213FA1D22A53300357F50 /* RBKeyboardListViewController.swift in Sources */,
+				3D6213F81D22A19F00357F50 /* RBKeyboardStorageConstants.swift in Sources */,
+				3DD3BA691D26A676000E2C3C /* RBBaseListViewController.swift in Sources */,
+				3DD3BA601D23CBAC000E2C3C /* RBKeyboardPreviewCellItem.swift in Sources */,
+				3D9D730A1D297FCD00937931 /* RBMoreKeyboardsCell.swift in Sources */,
+				3D30B64A1D22687C00844486 /* AppDelegate.swift in Sources */,
+				3D3ACA531D26AEC600E63AA1 /* RBMenuCell.swift in Sources */,
+				3D9D73191D298C1400937931 /* RBBaseCellItem.swift in Sources */,
+				3D9D73081D297FA900937931 /* RBRestorePurchasesCell.swift in Sources */,
+				3D6213FC1D22A61500357F50 /* RBKeyboardSampleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D30B64D1D22687C00844486 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D30B64E1D22687C00844486 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D30B6521D22687C00844486 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D30B6531D22687C00844486 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D30B6561D22687C00844486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D30B6571D22687C00844486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D30B6591D22687C00844486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rainboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OP.Rainboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D30B65A1D22687C00844486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rainboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OP.Rainboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D30B6411D22687C00844486 /* Build configuration list for PBXProject "Rainboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D30B6561D22687C00844486 /* Debug */,
+				3D30B6571D22687C00844486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D30B6581D22687C00844486 /* Build configuration list for PBXNativeTarget "Rainboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D30B6591D22687C00844486 /* Debug */,
+				3D30B65A1D22687C00844486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D30B63E1D22687C00844486 /* Project object */;
+}

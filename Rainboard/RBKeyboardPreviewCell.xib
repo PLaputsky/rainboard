@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RB"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RBKeyboardPreviewCell" id="JCf-KM-gYf" customClass="RBKeyboardPreviewCell" customModule="Rainboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JCf-KM-gYf" id="qfk-gQ-PCr">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sT6-e0-IX5">
+                        <rect key="frame" x="8" y="0.0" width="314" height="99.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-Ko-7Ng">
+                                <rect key="frame" x="229" y="8" width="77" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="l5d-74-0YJ"/>
+                                    <constraint firstAttribute="height" constant="27" id="pPR-DQ-ZKg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="contentEdgeInsets" minX="25" minY="7" maxX="25" maxY="7"/>
+                                <state key="normal" title="USE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="statusButtonWasTouched:" destination="JCf-KM-gYf" eventType="touchUpInside" id="Bl3-kO-AyQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PINK SERENITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmd-ZT-URg">
+                                <rect key="frame" x="16" y="14.5" width="88.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="HFM-0d-LvY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.56470588239999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wmd-ZT-URg" firstAttribute="firstBaseline" secondItem="cZk-Ko-7Ng" secondAttribute="firstBaseline" id="4Ld-tV-eyZ"/>
+                            <constraint firstAttribute="trailing" secondItem="cZk-Ko-7Ng" secondAttribute="trailing" constant="8" id="LXb-5T-RvQ"/>
+                            <constraint firstItem="cZk-Ko-7Ng" firstAttribute="top" secondItem="sT6-e0-IX5" secondAttribute="top" constant="8" id="LgP-Lo-t7D"/>
+                            <constraint firstItem="Wmd-ZT-URg" firstAttribute="leading" secondItem="sT6-e0-IX5" secondAttribute="leading" constant="16" id="pU4-g1-euh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="sT6-e0-IX5" firstAttribute="leading" secondItem="qfk-gQ-PCr" secondAttribute="leading" constant="8" id="Dcv-SJ-T09"/>
+                    <constraint firstItem="sT6-e0-IX5" firstAttribute="top" secondItem="qfk-gQ-PCr" secondAttribute="top" id="Gyu-FC-eM3"/>
+                    <constraint firstAttribute="bottom" secondItem="sT6-e0-IX5" secondAttribute="bottom" constant="8" id="ew9-6H-rs8"/>
+                    <constraint firstAttribute="trailing" secondItem="sT6-e0-IX5" secondAttribute="trailing" constant="8" id="tze-XI-rrI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colorView" destination="sT6-e0-IX5" id="2wT-Qo-72Y"/>
+                <outlet property="nameLabel" destination="Wmd-ZT-URg" id="M4f-mp-5cz"/>
+                <outlet property="statusButton" destination="cZk-Ko-7Ng" id="r0f-OO-e5o"/>
+            </connections>
+            <point key="canvasLocation" x="407.5" y="317.5"/>
+        </tableViewCell>
+    </objects>
+</document>

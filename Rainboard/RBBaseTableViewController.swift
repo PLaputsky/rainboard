@@ -1,5 +1,5 @@
 //
-//  RBBaseListViewController.swift
+//  RBBaseTableViewController.swift
 //  Rainboard
 //
 //  Created by Pavel Laputsky on 01.07.16.
@@ -13,7 +13,7 @@ protocol RBBaseTableViewDataSource: UITableViewDataSource {
     func cellItemsInTableView(tableView: UITableView) -> [RBBaseCellItem]
 }
 
-class RBBaseListViewController: UIViewController {
+class RBBaseTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var cellItems: [RBBaseCellItem]?
     
@@ -31,7 +31,7 @@ class RBBaseListViewController: UIViewController {
     }
 }
 
-extension RBBaseListViewController: RBBaseTableViewDataSource {
+extension RBBaseTableViewController: RBBaseTableViewDataSource {
     func cellItemsInTableView(tableView: UITableView) -> [RBBaseCellItem] {
         return []
     }
@@ -58,7 +58,7 @@ extension RBBaseListViewController: RBBaseTableViewDataSource {
     }
 }
 
-extension RBBaseListViewController: UITableViewDelegate {
+extension RBBaseTableViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         guard let cellItem = cellItems?[indexPath.row] else {
             return 0

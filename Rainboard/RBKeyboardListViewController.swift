@@ -8,10 +8,19 @@
 
 import UIKit
 
-class RBKeyboardListViewController: RBBaseListViewController {
+class RBKeyboardListViewController: RBBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.hideBottomHairline()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
+    private func openMenu(sender: AnyObject?){
+        
     }
     
     override func cellItemsInTableView(tableView: UITableView) -> [RBBaseCellItem] {

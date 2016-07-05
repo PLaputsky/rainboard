@@ -16,7 +16,7 @@ enum MenuItemType: String {
     Contacts = "CONTACT US"
 }
 
-class RBMenuViewController: RBBaseListViewController {
+class RBMenuViewController: RBBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,5 +29,8 @@ class RBMenuViewController: RBBaseListViewController {
             RBMenuCellItem(itemType: .Share),
             RBMenuCellItem(itemType: .Contacts)
         ]
+    }
+    @IBAction func closeButtonWasTouched(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

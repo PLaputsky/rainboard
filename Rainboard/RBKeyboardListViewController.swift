@@ -34,12 +34,18 @@ class RBKeyboardListViewController: RBBaseTableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        switch indexPath.row {
-//        case <#pattern#>:
-//            <#code#>
-//        default:
-//            <#code#>
-//        }
+        
+        switch cellItems?[indexPath.row] {
+        case is RBRestorePurchasesCellItem:
+            break
+        case is RBMoreKeyboardsCellItem:
+            break
+        case let item as RBKeyboardPreviewCellItem:
+            //TODO: push controller with item.keyboardType
+            break
+        default:
+            break
+        }
     }
     
     private func showShopListVC() {

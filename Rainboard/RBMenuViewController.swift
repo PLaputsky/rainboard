@@ -19,7 +19,6 @@ enum MenuItemType: String {
 class RBMenuViewController: RBBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func cellItemsInTableView(tableView: UITableView) -> [RBBaseCellItem] {
@@ -30,6 +29,24 @@ class RBMenuViewController: RBBaseTableViewController {
             RBMenuCellItem(itemType: .Contacts)
         ]
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        guard let item = cellItems?[indexPath.row] as? RBMenuCellItem  else {
+            return
+        }
+        
+        switch item.menuItemType {
+        case .Library:
+            return
+        case .Shop:
+            return
+        case .Share:
+            return
+        case .Contacts:
+            return
+        }
+    }
+    
     @IBAction func closeButtonWasTouched(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

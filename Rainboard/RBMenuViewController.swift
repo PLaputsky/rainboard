@@ -47,7 +47,7 @@ class RBMenuViewController: RBBaseTableViewController {
         }
     }
     
-    @IBAction func closeButtonWasTouched(sender: AnyObject) {
+    @IBAction private func closeButtonWasTouched(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

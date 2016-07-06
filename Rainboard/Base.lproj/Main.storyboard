@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qeD-ZO-jzc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yv3-GV-bKI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller-->
@@ -114,9 +115,117 @@
                     <view key="view" contentMode="scaleToFill" id="qr3-fk-uNX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-y1-LI5">
+                                <rect key="frame" x="0.0" y="279" width="320" height="229.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="R1a-y1-LI5" secondAttribute="height" multiplier="32:23" id="j56-Q3-Pct"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW8-KO-KHp">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UCU-gY-Pkd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="USE THS KEYBOARD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="impactButtonWasTouched:" destination="yv3-GV-bKI" eventType="touchUpInside" id="6o4-nR-Jb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ox-Z4-2om">
+                                <rect key="frame" x="21" y="31" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="gk5-ow-p5E"/>
+                                    <constraint firstAttribute="width" constant="20" id="pHb-Ge-xVL"/>
+                                </constraints>
+                                <state key="normal" image="close_black"/>
+                                <connections>
+                                    <action selector="closeButtonWasTouched:" destination="yv3-GV-bKI" eventType="touchUpInside" id="rgA-cE-wmQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYf-aW-BZD">
+                                <rect key="frame" x="279" y="31" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="8Mn-jC-VhW"/>
+                                    <constraint firstAttribute="height" constant="20" id="Tc9-e2-6Ju"/>
+                                </constraints>
+                                <state key="normal" image="share"/>
+                                <connections>
+                                    <action selector="shareButtonWasTouched:" destination="yv3-GV-bKI" eventType="touchUpInside" id="gEX-d0-qR8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLUEBERRY NIGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4X-pk-hBZ">
+                                <rect key="frame" x="97" y="33" width="126.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Rainboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6A-rL-yto">
+                                <rect key="frame" x="120" y="56" width="80" height="16"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <color key="textColor" red="0.63137254901960782" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aau-Jf-qQv">
+                                <rect key="frame" x="0.0" y="72" width="320" height="207"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-5Z-Xme">
+                                        <rect key="frame" x="33" y="46" width="254" height="115"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Extremely light and gentle blueberry gradient, inspired by so warm, cosy and embracing summer gloamings. Feel the breeze of your dreams and don’t forget to message “Good night” to those who you love. </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dIp-5Z-Xme" firstAttribute="centerY" secondItem="aau-Jf-qQv" secondAttribute="centerY" id="W75-GP-Zjg"/>
+                                    <constraint firstItem="dIp-5Z-Xme" firstAttribute="leading" secondItem="aau-Jf-qQv" secondAttribute="leading" constant="33" id="Zzl-AZ-50g"/>
+                                    <constraint firstAttribute="trailing" secondItem="dIp-5Z-Xme" secondAttribute="trailing" constant="33" id="d98-ue-aAZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Ox-Z4-2om" firstAttribute="top" secondItem="hKH-9K-aey" secondAttribute="bottom" constant="11" id="4VL-C1-CZB"/>
+                            <constraint firstItem="b6A-rL-yto" firstAttribute="centerX" secondItem="qr3-fk-uNX" secondAttribute="centerX" id="6Dm-VO-7Qf"/>
+                            <constraint firstItem="R1a-y1-LI5" firstAttribute="top" secondItem="aau-Jf-qQv" secondAttribute="bottom" id="9OF-tC-ttv"/>
+                            <constraint firstItem="aW8-KO-KHp" firstAttribute="top" secondItem="R1a-y1-LI5" secondAttribute="bottom" constant="-1" id="B70-OA-fTq"/>
+                            <constraint firstItem="T4X-pk-hBZ" firstAttribute="centerY" secondItem="1Ox-Z4-2om" secondAttribute="centerY" id="FQG-tN-rBl"/>
+                            <constraint firstAttribute="trailing" secondItem="R1a-y1-LI5" secondAttribute="trailing" id="JEz-fi-yLq"/>
+                            <constraint firstItem="b6A-rL-yto" firstAttribute="top" secondItem="T4X-pk-hBZ" secondAttribute="bottom" constant="7.5" id="NW4-ZD-2QV"/>
+                            <constraint firstItem="4Ax-Xv-Oeq" firstAttribute="top" secondItem="aW8-KO-KHp" secondAttribute="bottom" id="TWr-MI-sAL"/>
+                            <constraint firstItem="1Ox-Z4-2om" firstAttribute="leading" secondItem="qr3-fk-uNX" secondAttribute="leading" constant="21" id="Tde-ou-7K3"/>
+                            <constraint firstItem="aW8-KO-KHp" firstAttribute="leading" secondItem="qr3-fk-uNX" secondAttribute="leading" id="WpH-U3-KUv"/>
+                            <constraint firstItem="T4X-pk-hBZ" firstAttribute="centerX" secondItem="qr3-fk-uNX" secondAttribute="centerX" id="ZbX-Wk-zgG"/>
+                            <constraint firstAttribute="trailing" secondItem="aW8-KO-KHp" secondAttribute="trailing" id="c8P-uO-g7Q"/>
+                            <constraint firstItem="OYf-aW-BZD" firstAttribute="centerY" secondItem="1Ox-Z4-2om" secondAttribute="centerY" id="egt-X3-ZxO"/>
+                            <constraint firstAttribute="trailing" secondItem="OYf-aW-BZD" secondAttribute="trailing" constant="21" id="fhS-Uu-wby"/>
+                            <constraint firstItem="aau-Jf-qQv" firstAttribute="top" secondItem="b6A-rL-yto" secondAttribute="bottom" id="gXu-ae-XQN"/>
+                            <constraint firstItem="R1a-y1-LI5" firstAttribute="leading" secondItem="qr3-fk-uNX" secondAttribute="leading" id="gj0-0e-KVV"/>
+                            <constraint firstItem="aau-Jf-qQv" firstAttribute="leading" secondItem="qr3-fk-uNX" secondAttribute="leading" id="h2F-ja-Vlv"/>
+                            <constraint firstAttribute="trailing" secondItem="aau-Jf-qQv" secondAttribute="trailing" id="j6c-Ca-eyC"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="descritionLabel" destination="dIp-5Z-Xme" id="VBE-pT-WXu"/>
+                        <outlet property="keyboardImpactButton" destination="aW8-KO-KHp" id="KcV-Gv-0XX"/>
+                        <outlet property="keyboardSampleView" destination="R1a-y1-LI5" id="UfR-Tp-yTQ"/>
+                        <outlet property="nameTitle" destination="T4X-pk-hBZ" id="62Z-7P-eYh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isy-A3-E2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,6 +260,9 @@
     </scenes>
     <resources>
         <image name="close" width="32" height="32"/>
+        <image name="close_black" width="32" height="32"/>
+        <image name="keyboard" width="640" height="458"/>
         <image name="menu" width="38" height="28"/>
+        <image name="share" width="32" height="35"/>
     </resources>
 </document>

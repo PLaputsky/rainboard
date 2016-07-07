@@ -10,11 +10,11 @@ import UIKit
 
 class RBKeyboardPreviewCellItem: RBBaseCellItem {
     var keyboardType: KeyboardType
-    var statusButtonType: KeyboardActivityStatus
+    var keyboardStatusType: KeyboardActivityStatus
     
     init(keyboardType: KeyboardType, statusButtonType: KeyboardActivityStatus){
         self.keyboardType = keyboardType
-        self.statusButtonType = statusButtonType
+        self.keyboardStatusType = statusButtonType
         
         super.init(identifier: RBKeyboardPreviewCell.cellIdentifire)
         

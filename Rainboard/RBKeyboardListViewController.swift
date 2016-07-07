@@ -9,18 +9,9 @@
 import UIKit
 
 class RBKeyboardListViewController: RBBaseTableViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.hideBottomHairline()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        
-    }
-    
-    private func openMenu(sender: AnyObject?){
-        
     }
     
     override func cellItemsInTableView(tableView: UITableView) -> [RBBaseCellItem] {
@@ -34,26 +25,40 @@ class RBKeyboardListViewController: RBBaseTableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
         
         switch cellItems?[indexPath.row] {
         case is RBRestorePurchasesCellItem:
-            break
+            restorePurchases()
+            return
         case is RBMoreKeyboardsCellItem:
-            break
+            showShopListVC()
+            return
         case let item as RBKeyboardPreviewCellItem:
-            //TODO: push controller with item.keyboardType
-            break
+            showKeyBoardSampleVC(item)
+            return
         default:
-            break
+            return
         }
+    }
+    
+    private func restorePurchases(){
+        //TODO: restore purchases
     }
     
     private func showShopListVC() {
         //TODO: show Shop List
     }
     
-    private func showKeyBoardSampleVC() {
-        //TODO: show Keyboard Sample Screen
+    private func showKeyBoardSampleVC(item: RBKeyboardPreviewCellItem) {
+        guard let keyboardSampleVC = self.storyboard?.instantiateViewControllerWithIdentifier("KeyboardSampleVC") as? RBKeyboardSampleViewController else {
+            return
+        }
+        
+        keyboardSampleVC.keyboardType = item.keyboardType
+        keyboardSampleVC.keyboardActivityStatus = item.keyboardStatusType
+        
+        self.presentViewController(keyboardSampleVC, animated: true, completion: nil)
     }
 }
 

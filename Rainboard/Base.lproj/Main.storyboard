@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yv3-GV-bKI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qeD-ZO-jzc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,7 +9,7 @@
         <!--Menu View Controller-->
         <scene sceneID="9k0-RH-CYV">
             <objects>
-                <viewController id="bPz-4h-IMC" customClass="RBMenuViewController" customModule="Rainboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" id="bPz-4h-IMC" customClass="RBMenuViewController" customModule="Rainboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5xy-Ob-D0P"/>
                         <viewControllerLayoutGuide type="bottom" id="hMQ-C4-SNF"/>
@@ -61,7 +61,7 @@
         <!--LIBRARY-->
         <scene sceneID="tWa-rA-KJR">
             <objects>
-                <viewController id="laB-1m-PbH" customClass="RBKeyboardListViewController" customModule="Rainboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KeyboardListVC" id="laB-1m-PbH" customClass="RBKeyboardListViewController" customModule="Rainboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8LX-jv-YZ0"/>
                         <viewControllerLayoutGuide type="bottom" id="ZR5-EW-m9M"/>
@@ -70,7 +70,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="158" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bfg-vG-Cyc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="158" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bfg-vG-Cyc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,7 +107,7 @@
         <!--Keyboard Sample View Controller-->
         <scene sceneID="lin-bo-vtt">
             <objects>
-                <viewController id="yv3-GV-bKI" customClass="RBKeyboardSampleViewController" customModule="Rainboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KeyboardSampleVC" id="yv3-GV-bKI" customClass="RBKeyboardSampleViewController" customModule="Rainboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hKH-9K-aey"/>
                         <viewControllerLayoutGuide type="bottom" id="4Ax-Xv-Oeq"/>
@@ -173,7 +173,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aau-Jf-qQv">
                                 <rect key="frame" x="0.0" y="72" width="320" height="207"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-5Z-Xme">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-5Z-Xme">
                                         <rect key="frame" x="33" y="46" width="254" height="115"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -181,7 +181,7 @@
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -193,7 +193,9 @@
                                 <constraints>
                                     <constraint firstItem="dIp-5Z-Xme" firstAttribute="centerY" secondItem="aau-Jf-qQv" secondAttribute="centerY" id="W75-GP-Zjg"/>
                                     <constraint firstItem="dIp-5Z-Xme" firstAttribute="leading" secondItem="aau-Jf-qQv" secondAttribute="leading" constant="33" id="Zzl-AZ-50g"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dIp-5Z-Xme" secondAttribute="bottom" constant="8" id="cSf-Lx-RZj"/>
                                     <constraint firstAttribute="trailing" secondItem="dIp-5Z-Xme" secondAttribute="trailing" constant="33" id="d98-ue-aAZ"/>
+                                    <constraint firstItem="dIp-5Z-Xme" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aau-Jf-qQv" secondAttribute="top" constant="8" id="hDG-zZ-TxM"/>
                                 </constraints>
                             </view>
                         </subviews>

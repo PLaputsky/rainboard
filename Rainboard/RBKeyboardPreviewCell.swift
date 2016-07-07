@@ -42,7 +42,7 @@ class RBKeyboardPreviewCell: RBBaseTableViewCell {
         }
         
         setupWithKeyboardType(item.keyboardType)
-        updateStatusButtonWithStatus(item.statusButtonType)
+        updateStatusButtonWithStatus(item.keyboardStatusType)
     }
     
     private func setupWithKeyboardType(type: KeyboardType){
@@ -58,17 +58,17 @@ class RBKeyboardPreviewCell: RBBaseTableViewCell {
             statusButton.backgroundColor = UIColor.clearColor()
             statusButton.layer.borderColor = UIColor.whiteColor().CGColor
             statusButton.layer.borderWidth = 1
-            statusButton.setTitle(keyboardStatus.settings().descriptin, forState: .Normal)
+            statusButton.setTitle(keyboardStatus.settings().description, forState: .Normal)
             break;
         case .Use:
             statusButton.backgroundColor = UIColor.blackColor()
             statusButton.layer.borderWidth = 0
-            statusButton.setTitle(keyboardStatus.settings().descriptin, forState: .Normal)
+            statusButton.setTitle(keyboardStatus.settings().description, forState: .Normal)
             break;
         case .Price:
             statusButton.backgroundColor = UIColor.blackColor()
             statusButton.layer.borderWidth = 0
-            statusButton.setTitle(keyboardStatus.settings().descriptin, forState: .Normal)
+            statusButton.setTitle(keyboardStatus.settings().description, forState: .Normal)
         }
     }
 }

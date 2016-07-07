@@ -31,7 +31,7 @@ enum KeyboardType {
     }
 }
 
-typealias KeyboardStatusConfigs = (color: String, descriptin: String)
+typealias KeyboardStatusConfigs = (color: String, description: String)
 
 enum KeyboardActivityStatus {
     case
@@ -42,11 +42,11 @@ enum KeyboardActivityStatus {
     func settings() -> KeyboardStatusConfigs {
         switch self {
         case .isUsing:
-            return (color: "", descriptin: "USING ")
+            return (color: "", description: "USING ")
         case .Use:
-            return (color: "", descriptin: "USE")
+            return (color: "", description: "USE")
         case .Price(let value):
-            return (color: "", descriptin: value)
+            return (color: "", description: value)
         }
     }
 }
